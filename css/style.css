@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto";
+    background-color: #282A3A;
+    color: #ECECEC;
+}
+
+.container{
+    width: min(100% - 30px, 940px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.container p{
+    text-align: center;
+    font-size: 17px;
+}
+
+.container form{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container> form input[type=text]{
+    width: 60%;
+    height: 30px;
+    padding-left: 25px;
+    border: 2px solid #4a41c9;
+    border-top-left-radius: 40px;
+    font-size: 17px;
+}
+
+.container> form .fa-sharp{
+    position: absolute;
+    right: 26%;
+    font-size: 20px;
+    color: #282A3A;
+}
+
+.container>form input[type=submit]{
+    width: 12%;
+    height: 35px;
+    border: 2px solid #4a41c9;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 40px;
+    background-color: #4a41c9;
+    cursor: pointer;
+    color: #ECECEC;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.container>form input[type=submit]:hover{
+    background-color: #5b54be;
+    border: 2px solid #ECECEC;
+}
+
+
+
+.container > .img-thumbnail{
+    width: 100%;
+    box-shadow: 1px 1px 10px #4136de;
+    margin-top: 40px;
+}
+
+
+
+@media screen and (max-width: 720px) {
+
+    .container p{
+        font-size: 20px;
+    }
+
+    .container h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .container > form{
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .container> form .fa-sharp{
+        position: absolute;
+        right: 6%;
+        top: 10%;
+        font-size: 30px;
+    }
+
+    .container > form input[type=submit]{
+        width: 50%;
+        height: 50px;
+        border-bottom-right-radius: 0;
+        border-radius: 10px;
+        font-size: 20px;
+    } 
+
+    .container > form input[type=text]{
+        width: 90%;
+        height: 50px;
+        font-size: 17px;
+        border-bottom-left-radius: 0;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+}
