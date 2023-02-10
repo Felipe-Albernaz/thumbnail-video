@@ -18,3 +18,8 @@ form.addEventListener('submit', function(evento){
 
     input_url.value = "";
 });
+
+document.querySelector('.img-thumbnail').addEventListener('click', function(evento){
+    console.log(evento);
+    window.open(evento.srcElement.currentSrc); 
+})
