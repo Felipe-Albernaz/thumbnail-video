@@ -10,4 +10,4 @@
 -``JAVASCRIPT``
 
 
-#### Desenvolvido por _Felipe Albernaz_
+#### Inspirado em outras ferramentas vistas em aula.
